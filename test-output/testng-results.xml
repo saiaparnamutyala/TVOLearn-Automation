@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-17T22:35:44 EDT" name="Default suite" finished-at="2024-05-17T22:37:40 EDT" duration-ms="115983">
+    <groups>
+    </groups>
+    <test started-at="2024-05-17T22:35:44 EDT" name="Default test" finished-at="2024-05-17T22:37:40 EDT" duration-ms="115983">
+      <class name="com.tvolearn.tests.TVOLearnTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tvolearn.tests.TVOLearnTest@635eaaf1]" started-at="2024-05-17T22:35:44 EDT" name="setUp" finished-at="2024-05-17T22:35:44 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.tvolearn.tests.TVOLearnTest@635eaaf1]" started-at="2024-05-17T22:35:44 EDT" name="beforeMethod" finished-at="2024-05-17T22:36:43 EDT" duration-ms="58572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLearningResources()[pri:0, instance:com.tvolearn.tests.TVOLearnTest@635eaaf1]" started-at="2024-05-17T22:36:43 EDT" name="testLearningResources" finished-at="2024-05-17T22:37:40 EDT" duration-ms="57157" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.linkText: Mathematics (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Sais-MBP', ip: 'fe80:0:0:0:14d3:c86f:c328:131d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.61, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: /var/folders/d9/rwbnsst53kx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 125.0.6422.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d28b9c2c7cad593d63e742678ed7e499]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Mathematics (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Sais-MBP', ip: 'fe80:0:0:0:14d3:c86f:c328:131d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.61, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: /var/folders/d9/rwbnsst53kx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 125.0.6422.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d28b9c2c7cad593d63e742678ed7e499
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.tvolearn.tests.TVOLearnTest.testLearningResources(TVOLearnTest.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLearningResources -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tvolearn.tests.TVOLearnTest@635eaaf1]" started-at="2024-05-17T22:37:40 EDT" name="afterMethod" finished-at="2024-05-17T22:37:40 EDT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tvolearn.tests.TVOLearnTest@635eaaf1]" started-at="2024-05-17T22:37:40 EDT" name="tearDown" finished-at="2024-05-17T22:37:41 EDT" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tvolearn.tests.TVOLearnTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

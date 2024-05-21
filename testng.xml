@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TVO Learn Automation Suite">
+    <test name="TVO Learn Tests">
+        <classes>
+            <class name="com.tvolearn.tests.TVOLearnTest" />
+        </classes>
+    </test>
+</suite>
